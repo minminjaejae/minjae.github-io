@@ -1,0 +1,14 @@
+<svg width="1600" height="122" viewBox="0 0 1600 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+  <style>#line {
+    animation: dash 10s linear infinite;
+  }
+  @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+</style>
+</defs>
+<path id="line" d="M1600 121C1289 121 1190.1 -0.250102 789 -0.000102214C389 -0.000102214 289 121 0.00012207 121" stroke="#fff" stroke-dasharray="2 10"  stroke-dashoffset='-1450'/>
+</svg>

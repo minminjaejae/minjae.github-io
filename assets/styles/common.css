@@ -1,0 +1,94 @@
+@charset "utf-8";
+/**** common.css ****/
+
+/* 변수 선언 */
+@import url(./variable.css);
+
+/**** common ****/
+body {
+  font-family: var(--main--font--ko);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  /* 한글전용 setting */
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.lower-case {
+  /* 소문자가 필요한 영역에 사용 */
+  text-transform: lowercase;
+}
+
+.flex {
+  /* common에 기본 세팅으로 넣고 필요한 곳에 class명을 입력 */
+  display: flex;
+  align-items: center;
+}
+
+/* 공통으로 들어가는 article title */
+.main-title {
+  font-family: var(--main--font--en);
+  font-size: var(--font-size-title);
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+}
+.main-title::before {
+  content: "/";
+  display: block;
+  font-family: var(--main--font--ko);
+  color: var(--point-color);
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 100px 0 30px;
+  /* 
+  방법 1) 위
+  방법 2) 아래
+  content: "";
+  width: 5px;
+  height: 20px;
+  background-color: var(--point-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 100px auto 30px;
+  transform: skew(-30deg);
+  */
+}
+.main-des {
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 20px auto;
+}
+
+.more-btn {
+  transition: 0.3s;
+  background-color: var(--point-color);
+  color: #fff;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.more-btn:hover {
+  border-radius: 30px;
+}
+
+.ghost-btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+.ghost-btn:hover {
+  border-radius: 30px;
+}

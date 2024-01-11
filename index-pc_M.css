@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@media (min-width: 640px) {
+  /* whatwedo */
+  :root {
+    --width1: 60vw;
+  }
+  .whatwedo-container .whatwedo-wrap {
+    flex-direction: row;
+    top: 25vh;
+  }
+  .whatwedo-container .whatwedo-graph {
+    z-index: 2;
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    height: 1px;
+    transform: translateX(-50%);
+  }
+  .whatwedo-container .whatwedo-wrap h3 {
+    font-size: 3.125rem;
+    text-align: right;
+  }
+  .whatwedo-container .whatwedo-wrap h3 span {
+    font-size: 1.75rem;
+  }
+  .whatwedo-container .whatwedo-wrap p {
+    font-size: 1.375rem;
+    padding-left: 4vw;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-line {
+    width: 100vw;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
+    font-size: 0.875rem;
+    left: 0;
+    bottom: -75px;
+    width: 90%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    transform: rotate(360deg);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 span {
+    line-height: 18px;
+    height: calc(18px * 2);
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 300;
+    width: 100%;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 span {
+    font-size: 1.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4.point {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: calc(var(--width1) / -7 * 6 / 2 + 30px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
+    font-size: 1.75rem;
+    margin-top: -65px;
+    text-align: center;
+    font-weight: 400;
+    transform: rotate(360deg);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 span {
+    font-size: 1rem;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 {
+    width: calc(var(--width1) / 7 * 2);
+    height: calc(var(--width1) / 7 * 2 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 i {
+    width: calc((var(--width1) / 7 * 2) - 2px);
+    height: calc((var(--width1) / 7 * 2 / 2) - 2px);
+    border-top-left-radius: calc((var(--width1) / 7 * 2 / 2));
+    border-top-right-radius: calc((var(--width1) / 7 * 2 / 2));
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3 {
+    width: calc(var(--width1) / 7 * 3);
+    height: calc(var(--width1) / 7 * 3 / 2 + 15px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3 i {
+    width: calc(var(--width1) / 7 * 3 - 2px);
+    height: calc(var(--width1) / 7 * 3 / 2 - 2px);
+    border-top-left-radius: calc(var(--width1) / 7 * 3 / 2);
+    border-top-right-radius: calc(var(--width1) / 7 * 3 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6 {
+    width: calc(var(--width1) / 7 * 6);
+    height: calc(var(--width1) / 7 * 6 / 2 + 80px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6 i {
+    width: calc(var(--width1) / 7 * 6 - 2px);
+    height: calc(var(--width1) / 7 * 6 / 2 - 2px);
+    border-top-left-radius: calc(var(--width1) / 7 * 6 / 2);
+    border-top-right-radius: calc(var(--width1) / 7 * 6 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr4,
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr5 {
+    height: calc(var(--width1) / 7 * 6 / 11);
+  }
+
+  /* work */
+  .work-container .wrapper-txt .bottom {
+    height: 45vw;
+  }
+  .work-container .wrapper-txt .bottom h3 {
+    top: 60%;
+    left: 30%;
+    font-size: 11vw;
+  }
+  .work-container .wrapper-img {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .work-container .wrapper-img .work-img-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: grab;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s;
+  }
+  .work-container .wrapper-img .work-img-wrap > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    opacity: 1;
+    margin-left: 3vw;
+    width: 40vw;
+    height: 40vw;
+    aspect-ratio: 1/1;
+    pointer-events: none;
+  }
+  .work-container .wrapper-img .work-img-wrap div a img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .work-container .wrapper-img .work-img-wrap .work-control {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,20 @@
+/* variable.css 변수 선언 */
+
+:root {
+  --main--font--ko: "Pretendard Variable", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --main--font--en: "Archivo", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --title--font-en: "Lovelace", arial, Georgia, Times, 바탕체, "Times New Roman",
+    serif;
+
+  /* 231031 추후 css 작업 완료 후 병합 시 변수로 사이즈 통일 정리
+  --font-size-title: 2.375rem;
+  --font-size-count: 3.25rem;
+  --font-size-vid-title1: 4.25rem;
+  --font-size-vid-title2: 4rem;
+  --font-size-18: 1.125rem;
+  --font-size-14: 0.8rem; */
+
+  /* --point-color: #f5821f; */
+}

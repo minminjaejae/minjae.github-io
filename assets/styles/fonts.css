@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 
+'Archivo', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* 'Pretendard Variable' */
+@import url(./pretendardvariable.css);
+
+/* 'Lovelace' */
+@font-face {
+  font-family: "Lovelace";
+  font-style: thin;
+  font-weight: 100;
+  src: url(../fonts/Lovelace-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lovelace";
+  font-style: light;
+  font-weight: 200;
+  src: url(../fonts/Lovelace-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lovelace";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Lovelace-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lovelace";
+  font-style: bold;
+  font-weight: 600;
+  src: url(../fonts/Lovelace-Bold.woff) format("woff");
+}
